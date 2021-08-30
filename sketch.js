@@ -5,6 +5,7 @@ const Bodies = Matter.Bodies;
 const Body = Matter.Body;
 const Constraint = Matter.Constraint;
 
+var score=0;
 var roof;
 function preload()
 {
@@ -27,6 +28,9 @@ function setup() {
 	bob4 = new Bob(450,300);
 	bob5 = new Bob(500,300);
 
+	
+	text("score:",score,20,20);
+	
 	// rope1 = new Rope1(bob1.body,{x:300 ,y:100}); 
 	
 	rope1 = new Rope(bob1.body,roof.body,-100);
